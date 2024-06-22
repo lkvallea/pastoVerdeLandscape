@@ -1,0 +1,75 @@
+:root{
+  --back-color-foot- : #A94685;
+  --back-color-transl- : rgba(0,0,0,0.8);
+  --back-color-white- : #FFFFFF;
+  --white-font-: #FFFFFF;
+  --red-font-:#EA3C54;
+  --green-font-:#33A369;
+  --border-opinion-: #33A369;
+
+
+}
+
+h1{
+  color:var(--white-font-) ;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+
+.main-wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+
+.header-main-container{
+  display: flex;
+  flex-direction: row;
+  position: static;
+  top: 0;
+  padding: .5em;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-main-container nav{
+  display: flex;
+  flex-direction: row;
+  width: 50vw;
+  justify-content: space-between;
+}
+
+.icon-container{
+  margin: .3em;
+}
+
+.body-wrapper{
+  height: calc(100vh - 7.9em);
+  background-color: rgba(0,0,0,0.8);
+  overflow:auto;
+  display: flex;
+  position: relative;
+}
+
+.footer-container{
+  display: none;
+}
+
+.footer-main-container{
+  display: flex;
+  flex-direction: row;
+  position: static;
+  bottom: 0;
+  background-color: var(--back-color-foot-);
+  padding: .5em 1.8em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-main-container nav{
+  display: flex;
+  flex-direction: row;
+}

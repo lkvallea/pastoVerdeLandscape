@@ -1,0 +1,160 @@
+.services-wrapper {
+    display: grid;
+    grid-template-rows: 85% auto;
+    height: 100%;
+    width: 100%;
+}
+
+.services-content {
+    display: grid;
+    grid-template-rows: 40% 30% 30%;
+}
+
+.services-row {
+    display: flex;
+    flex: 1;
+}
+
+/* .services-row:nth-child(1){
+    height: 40%;
+  } */
+
+.service-head-item-pic {
+    width: 100%;
+}
+
+.service-squeres {
+    display: flex;
+    flex: 1;
+}
+
+.service-squere-text,
+.service-squere-pic {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.service-head-item-pic img,
+.service-squere-pic img,
+.service-more-options img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-head-item-text {
+    text-transform: uppercase;
+    position: absolute;
+    top: 1em;
+    left: 4em;
+    font-size: 2em;
+}
+
+.service-more-options {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.service-more-options img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.services-spiral {
+    display: flex;
+}
+
+.service-squere-text {
+    background-color: var(--white-font-);
+    font-size: .9em;
+    gap: .6em;
+}
+
+.service-squere-text p {
+    padding: .5em;
+}
+
+.service-squere-text h3{
+    font-size: 1.1em;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.services-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .services-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .services-content.front {
+    z-index: 3;
+    transform: translateY(0) translateX(0);
+  }
+  
+  .services-content.next-right {
+    z-index: 2;
+    transform: translateY(0) translateX(100%);
+  }
+  
+  .services-content.prev-left {
+    z-index: 2;
+    transform: translateY(0) translateX(-100%);
+  }
+  
+  .services-content.next-left,
+  .services-content.prev-right {
+    z-index: 1;
+    transform: translateY(0) translateX(0);
+  }
+  
+  .services-content.back {
+    display: none;
+  }
+  
+
+/*
+.services-container {
+    overflow: hidden;
+    position: relative;
+    height: 100vh; /* Ajusta según sea necesario *
+  }
+  
+  .service {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .service-enter {
+    transform: translateY(100%);
+  }
+  
+  .service-enter-active {
+    transform: translateY(0);
+  }
+  
+  .service-exit {
+    transform: translateY(0);
+  }
+  
+  .service-exit-active {
+    transform: translateY(-100%);
+  }*/
