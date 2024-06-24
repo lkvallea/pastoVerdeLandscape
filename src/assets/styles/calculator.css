@@ -14,8 +14,14 @@
 }
 
 .calculator-tittle{
-    align-self: baseline;
-    height: 30%;
+display: flex;
+gap: 1em;
+margin: 1em;
+}
+
+.calculator-tittle h3{
+    color: var(--red-font-);
+    font-size: 1.3em;
 }
 
 #calculator-form{
@@ -45,4 +51,9 @@ justify-self: center;
 height: 30%;
 align-items: center;
 justify-content: center;
+}
+
+.calculator-buttons{
+    display: flex;
+    justify-content: space-between;
 }

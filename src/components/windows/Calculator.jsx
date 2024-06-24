@@ -9,7 +9,7 @@ export default function calculator() {
   const STEP_AREA = 1;
   const services = ["Services 1", "Services 2", "Services 3", "Services 4"];
   const cities = ["City 1", "City 2", "City 3", "City 4"];
-  const [calculatorTotal, setCalculatorTotal] = [0, 0];
+  const [calculatorTotal, setCalculatorTotal] = [100, 120];
 
   const [selectedOptionService, setSelectedOptionService] = useState("");
   const [selectedOptionCity, setSelectedOptionCity] = useState("");
@@ -85,8 +85,8 @@ export default function calculator() {
               />
             </div>
             <div className="calculator-buttons">
-              <input type="button" className="btn btn-contact" />
-              <input type="button" className="btn btn-calcular" />
+              <input type="button" className="btn btn-contact" value="Clean" />
+              <input type="button" className="btn btn-calcular"  value="Send" />
             </div>
           </div>
           <div className="calculator-total">
